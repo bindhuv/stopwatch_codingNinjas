@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: paleturquoise;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.clockWrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    font-size: 72px;
+    font-weight: 500;
+}
+.clockWrapper span {
+    position: relative;
+    min-width: 6rem;
+}
+.clockWrapper span:not(:last-child):after {
+    content: ":";
+    position: absolute;
+    right: -1.5rem;
+    top: -6px
+}
+.buttonsWrapper {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.buttonsWrapper .btn{
+    font-size: 20px;
+    min-width: 7rem;
+}
+
